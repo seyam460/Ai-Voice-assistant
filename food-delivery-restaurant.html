@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">🍔 FoodHub</div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="orders.html" class="nav-link">Orders</a>
+                    <a href="cart.html" class="nav-link cart-link">
+                        🛒 <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <a id="logout-btn" href="#" class="nav-link" style="display: none;">Logout</a>
+                    <a id="login-link" href="login.html" class="nav-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Restaurants</a>
+        </div>
+
+        <div id="restaurant-header" class="restaurant-header">
+            <div class="restaurant-info">
+                <h1 id="restaurant-name"></h1>
+                <p id="restaurant-cuisine"></p>
+                <div class="restaurant-meta">
+                    <span>⭐ <span id="restaurant-rating"></span></span>
+                    <span>🚚 <span id="restaurant-delivery"></span> min</span>
+                    <span>💵 Delivery: $<span id="restaurant-fee"></span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-container">
+            <aside class="menu-sidebar">
+                <h3>Categories</h3>
+                <div id="categories" class="categories-list">
+                    <!-- Categories will be populated -->
+                </div>
+            </aside>
+
+            <main class="menu-items">
+                <div id="menu-list" class="items-grid">
+                    <p>Loading menu...</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Add Item Modal -->
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="item-detail">
+                <!-- Item details will be populated -->
+            </div>
+            <div class="modal-footer">
+                <div class="quantity-selector">
+                    <button id="qty-minus" class="qty-btn">−</button>
+                    <input type="number" id="item-quantity" value="1" min="1">
+                    <button id="qty-plus" class="qty-btn">+</button>
+                </div>
+                <button id="add-to-cart-btn" class="btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 FoodHub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/restaurant.js"></script>
+</body>
+</html>

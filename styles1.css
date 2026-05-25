@@ -1,0 +1,55 @@
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color:blue;
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-top: 10px;
+    padding: 20px;
+}
+.nav-links .aboutme {
+    color: #333;
+    text-decoration: italic;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links .aboutme:hover {
+    color: aqua;
+    text-decoration: italic;
+    font-size: 1.2rem;
+
+}
+
+.nav-links .projects {
+    color: #333;
+    text-decoration: italic;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links .projects:hover {
+    color: aqua;
+    text-decoration: italic;
+    font-size: 1.2rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color:green;
+    list-style: none;
+    text-decoration: solid;
+
+}

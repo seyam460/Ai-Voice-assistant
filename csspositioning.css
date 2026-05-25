@@ -1,0 +1,16 @@
+
+.container {
+    width : 600px;
+    height : 600px;
+    position : relative ;
+    border : 1px solid #333 ;
+}
+.box {
+    width:200px;
+    height:200px;
+    background-color: brown;
+    position : absolute;
+    left : 50px;
+    top : 30px;
+}
+

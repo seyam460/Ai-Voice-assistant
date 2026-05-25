@@ -1,0 +1,15 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+p{
+    font-family : "Arial" , sans-serif;
+    font-size : 500px;
+    font-weight: bolder;
+    font-style: italic;
+}
+h2{
+    text-transform:uppercase;
+    color:red;
+}

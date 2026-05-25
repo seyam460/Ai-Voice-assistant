@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway&display=swap");
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f2f5f9;
+}
+
+.main-section {
+	width: 100vh;
+	height: 100vh;
+	padding-top: 50px;
+}
+
+.logo {
+	width: 177px;
+	height: auto;
+}
+
+.header {
+	padding-bottom: 72px;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 32px;
+	gap: 40px;
+	height: 100px;
+	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+	background: #f2f7fc;
+	border-radius: 20px;
+}
+
+.nav-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80px;
+	height: 80px;
+	border-radius: 20px;
+	background-color: #e1e8ef;
+	cursor: pointer;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000;
+	text-decoration-line: none;
+}
+
+.nav-item p {
+	margin: 0;
+}
+
+.nav-item:hover {
+	color: #ffffff;
+	background: linear-gradient(91.49deg, #ff9c1a 7.92%, #e80505 108.2%);
+}
+
+.content-section {
+	margin-top: 10px;
+	display: flex;
+	gap: 20px;
+}
+
+.sidebar {
+	position: relative;
+	background: #ffffff;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	padding: 0 25px 66px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: 700px;
+}
+
+.profile-image {
+	position: absolute;
+	top: -15%;
+	/* right: 50%; */
+	width: 200px;
+	height: 200px;
+	border-radius: 16px;
+}
+
+.profile-name {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28.4197px;
+	line-height: 36px;
+	color: #0b0909;
+}
+
+.profile-designation {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 40px;
+	color: rgba(11, 9, 9, 0.5);
+}
+
+.title-section {
+	padding-top: 114px;
+}
+
+.social-media-section {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 10px;
+}
+
+.social-media-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 24px;
+	gap: 8px;
+	width: 60px;
+	height: 60px;
+	background: #f2f7fc;
+	border-radius: 8px;
+}
+
+.contact-card {
+	background: #f2f5f9;
+	border-radius: 20px;
+	width: 350px;
+	margin-top: 22px;
+	padding: 33px 15px 33px 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.phone-card {
+	padding-bottom: 18px;
+	border-bottom: 1px solid #e3e3e3;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	width: 75%;
+}
+
+.contact-card-title {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 0px;
+	color: rgba(26, 16, 3, 0.5);
+}
+
+.contact-card-info {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	margin: 0;
+}
+
+.contact-icon {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.download-button {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.page-section {
+	background: #ffffff;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	padding-top: 18px;
+	padding-left: 72px;
+	padding-right: 64px;
+	padding-bottom: 32px;
+}
+
+.page-header {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+	margin-bottom: 14px;
+}
+
+.page-title {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 40px;
+	letter-spacing: 0.025em;
+	color: #0b0909;
+	text-transform: uppercase;
+}
+
+.line-item {
+	width: 252px;
+	height: 2px;
+	border: 1px solid #ff9c1a;
+}
+
+.summary-text {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.skill-section-container {
+	margin-top: 16px;
+}
+
+.skill-card-container {
+	display: flex;
+	gap: 24px;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.skill-card-1,
+.skill-card-2 {
+	width: 48%;
+	padding: 10px 24px;
+	border-radius: 16px;
+}
+
+.skill-card-1 {
+	background-color: #fffbd1;
+}
+
+.skill-card-2 {
+	background-color: red;
+}
+
+.skill-card-header {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
