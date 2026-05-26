@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Delete Method</title>
+  </head>
+  <body>
+    <button id="articleDelete">Delete</button>
+    <div id="postresult"></div>
+  </body>
+  <script>
+    function articleDelete() {
+        const xhr = new XMLHttpRequest();
+        xhr.open("DELETE", "https://jsonplaceholder.typicode.com/posts/1", true)
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            document.getElementById("postresult").innerText =xhr.responseText;
+            console.log(xhr.response);
+          }
+          xhr.send()
+    }
+  </script>
+</html>
