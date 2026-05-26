@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript demo 3</title>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <h1 id="title">H</h1>
+    <p id="body">R</p>
+  </body>
+  <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/", true);
+    xhr.onreadystatechange = function () {
+      console.log(xhr);
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log(xhr.response);
+
+        document.getElementById("title").innerText = JSON.parse(
+          xhr.response,
+        ).title;
+        document.getElementById("body").innerText = JSON.parse(
+          xhr.response,
+        ).body;
+
+        //const data = JSON.parse(xhr.response);
+        //data.forEach(item =>  {
+
+        //const itemcontainer = document.createElement("div");
+
+        //itemcontainer.innerHTML = '
+        //<h2>${item.title}</h2>
+        //<p>${item.body}</p>'
+
+        //container.appendChild(itemcontainer)
+        // })
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>
