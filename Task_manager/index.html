@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link href="syle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main-class">
+      <h1 class="title">Task Manager</h1>
+
+      <section>
+        <h3 class="title">Add Task</h3>
+        <form id="new-task-form">
+          <input
+            required
+            id="task-title"
+            type="text"
+            placeholder="Task description"
+            name="taskDescription"
+          />
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section>
+        <h3 class="title">Tasks</h3>
+        <ul id="tasks">
+          <!--Tasks will be here-->
+        </ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
