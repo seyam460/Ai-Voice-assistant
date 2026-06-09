@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -90,3 +91,97 @@
     </script>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-08" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>Html documentation File</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+      }
+      .open-modal-btn {
+        padding: 10px 20px;
+        font-size: 20px;
+        background: rgb(18, 59, 223);
+        border: none;
+        cursor: pointer;
+
+        border-radius: 5px;
+        color: #fff;
+      }
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: felx;
+        justify-conetent: center;
+        align-items: center;
+        opacity: 0;
+
+        transations: all 0.3s linear;
+        pointer-events: none;
+      }
+      .modal.active {
+        opacity: 0;
+        pointer-events: auto;
+      }
+      .modal-content {
+        background: #fff;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 20px;
+        background: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="open-modal-btn">Open Modal</button>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <h2>Modal Popup</h2>
+        <p>This is a modal popup</p>
+      </div>
+    </div>
+    <script>
+      let modal = document.getElementById("modal");
+      let openModalBtn = document.querySelector(".open-modal-btn");
+      let closeBtn = document.querySelector(".close-btn");
+
+      openModalBtn.addEventListener("click", function () {
+        modal.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", function () {
+        modal.classList.remove("active");
+      });
+
+      window.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
+>>>>>>> 85342832fb46aecd26b6835148627a72f94c174d

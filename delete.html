@@ -11,19 +11,22 @@
     <title>Delete Method</title>
   </head>
   <body>
-    <button id="articleDelete">Delete</button>
-    <div id="postresult"></div>
+    <button onclick="articleDelete()">Delete</button>
+    <div id="deletetresult"></div>
   </body>
   <script>
     function articleDelete() {
-        const xhr = new XMLHttpRequest();
-        xhr.open("DELETE", "https://jsonplaceholder.typicode.com/posts/1", true)
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState == 4 && xhr.status == 200) {
-            document.getElementById("postresult").innerText =xhr.responseText;
-            console.log(xhr.response);
-          }
-          xhr.send()
+      const xhr = new XMLHttpRequest();
+      xhr.open("DELETE", "https://jsonplaceholder.typicode.com/posts/1", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 204) {
+          console.log(xhr.response);
+          document.getElementById("deletetresult").innerText =
+            "article successfully deleted";
+        }
+      };
+
+      xhr.send();
     }
   </script>
 </html>

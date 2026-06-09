@@ -38,11 +38,11 @@
           title: title,
           body: body,
         });
-
+        // response
         xhr.onreadystatechange = function () {
           if (xhr.readyState === 4 && xhr.status === 201) {
             console.log(xhr.response);
-            document.getElementById("postResult").innerTest = xhr.responseText;
+            document.getElementById("postResult").innerText = xhr.responseText;
           }
         };
 

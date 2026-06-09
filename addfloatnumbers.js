@@ -7,4 +7,4 @@ function parse() {
     
 
 }
-parse()
+parse();

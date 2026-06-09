@@ -331,9 +331,111 @@ console.log(convertedvalue1 + 100)
 
 
 
+// spread operator
+
+const arr1 = [1, 2, 3, 4]
+const arr2 = [...arr1, 5, 6 ,7]
+console.log(arr2)
+
+const arr3 = [...arr2, 10]
+console.log(arr3)
+
+const obj1 = { name: 'Rakib' , age : 26}
+const obj2 = {...obj1 , email:'nazifakawser@gmail.com'}
+console.log(obj2)
+
+// rest operator 
+
+function sum(...numbers) {
+    console.log(numbers)
+    const sum = numbers.reduce((acc, curr) => acc + curr, 0)
+    return sum
+}
+
+const result = sum(1,2,3,4,5)
+console.log(result)
+
+
+// ES6 array de-structuring
+
+const total = [10 , 40, 50]
+const [num1 , num2, num3] = total ;
+console.log(num1 , num2, num3);
+
+const sum1 = (num1 , num2) => num1 + num2 
+console.log(sum1(10 , 40))
+
+// dynamic function 
+
+function createMulitplier(factor) {
+    return function(number) {
+        return number * factor;
+    }
+}
+
+const double = createMulitplier(2)
+console.log(double(5))
+
+const tripple = createMulitplier(3)
+console.log(tripple(10))
+
+// object method 
+const car = {
+    brand : "tesla" , 
+    model : "Model 50",
+    getinfo() {
+        return `Brand: ${this.brand}, Model: ${this.model}`
+    }
+}
+console.log(car.getinfo())
 
 
 
+
+// decision making 
+
+let age1 = 25 
+
+if (age < 18) {
+    console.log("you are a minor")
+}
+else {
+    console.log("you are an adult")
+}
+
+
+// ternary operator 
+const result1 = age1 < 18 ? "You are a minor." : "You are an adult"
+console.log(result1)
+
+
+// ES6 Map , ES6 set 
+
+// map : it since like as object : key and value pair : object type data structure 
+const myMap = new Map()
+myMap.set('name', 'Rakib')
+myMap.set('age', 26)
+console.log(myMap.get('name'))
+console.log(myMap.get('age'))
+console.log(myMap)
+
+// set : it is a collection of unique values : set deoes not duplicate values : array type data structure
+ 
+
+const numberset = new Set([1, 2, 3, 4, 5])
+numberset.add(7)
+console.log(numberset)
+console.log(numberset.has(29))
+
+for(let num of numberset) {
+    console.log(num)
+}
+
+const numbersarray = [...numberset]
+console.log(numbersarray)
+
+
+// hoisting , nodejs description 
 
 
 

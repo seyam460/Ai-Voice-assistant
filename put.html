@@ -8,11 +8,11 @@
     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Post Method</title>
+    <title>Put Method</title>
   </head>
 
   <body>
-    <h1>Post Method</h1>
+    <h1>Put Method</h1>
 
     <!--<input type="text" id="title" placeholder="title" />-->
     <!--<input type="text" id="body" placeholder="body" />-->
@@ -41,9 +41,9 @@
         });
 
         xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4 && xhr.status === 201) {
+          if (xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.response);
-            document.getElementById("postResult").innerTest = xhr.responseText;
+            document.getElementById("postResult").innerText = xhr.responseText;
           }
         };
 
